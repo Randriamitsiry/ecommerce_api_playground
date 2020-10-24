@@ -9,7 +9,7 @@ cp .env .env.local
 php bin/console d:d:c //to create your db
 php bin/console d:s:u -f //to update database schema
 ```
-
+NB: You can also play with data in "fixture/dump.sql"
 Endpoints list:
 ````
 - /product/create : expects a json data with the product name and description as payload
