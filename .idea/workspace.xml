@@ -10,11 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb0ec40-c686-47ab-b4d6-947193b0e449" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Core/Cache/CacheContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-    </list>
+    <list default="true" id="3cb0ec40-c686-47ab-b4d6-947193b0e449" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603513322106</updated>
       <workItem from="1603513323225" duration="14527000" />
-      <workItem from="1603528186420" duration="739000" />
+      <workItem from="1603528186420" duration="1378000" />
     </task>
     <servers />
   </component>
