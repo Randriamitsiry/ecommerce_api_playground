@@ -11,59 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cb0ec40-c686-47ab-b4d6-947193b0e449" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/providus_api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/cache.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/preload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Action/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Action/Order/OrderProductsAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Action/Product/CreateAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Action/Product/GetPriceAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Action/Product/ProductInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Action/Product/UpdatePriceAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Action/Stock/AddItemAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Action/Stock/StockInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/DeleteExpiredLotsCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/TooManyExpiredProductSoonCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/AbstractAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/AbstractListingAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/AbstractPostingAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/OrderContent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/OrderContentRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/OrderRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/OrderManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/ProductManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/StockManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Action/Order/OrderProductsAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Action/Order/OrderProductsAction.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603513322106</updated>
-      <workItem from="1603513323225" duration="12924000" />
+      <workItem from="1603513323225" duration="13944000" />
     </task>
     <servers />
   </component>
