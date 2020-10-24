@@ -26,14 +26,18 @@ class CreateAction extends AbstractPostingAction implements ProductInterface
 
     public function __invoke(Request $request)
     {
-        //get payload as json and convert it as an array
-        $payload = json_decode($request->getContent(), true);
-        //check if all required payload are given
-        $this->validatePayload($payload);
-        $product = $this->craftProductFromPayload($payload);
-        //save to database
-        $id = $this->productManager->saveProduct($product);
-        return $this->renderSuccess(['product_id' => $id]);
+        try {
+            //get payload as json and convert it as an array
+            $payload = json_decode($request->getContent(), true);
+            //check if all required payload are given
+            $this->validatePayload($payload);
+            $product = $this->craftProductFromPayload($payload);
+            //save to database
+            $id = $this->productManager->saveProduct($product);
+            return $this->renderSuccess(['product_id' => $id]);
+        } catch (\Exception $exception) {
+            return $this->renderError($exception->getCode(), ['message' => $exception->getMessage()]);
+        }
     }
 
     protected function getRequiredPayload(): array

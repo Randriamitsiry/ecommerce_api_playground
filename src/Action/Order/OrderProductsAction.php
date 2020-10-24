@@ -28,8 +28,20 @@ class OrderProductsAction extends AbstractPostingAction
     }
     public function __invoke(Request $request)
     {
-        $payload = json_decode($request->getContent(), true);
-        $this->validatePayload($payload);
+        try {
+            $payload = json_decode($request->getContent(), true);
+            $this->validatePayload($payload);
+            /**
+             * Save the order
+             */
+            $this->orderManager->placeOrder($payload['orderId'], $payload['contents']);
+            return $this->renderSuccess([]);
+        } catch (\Exception $exception) {
+            return $this->renderError(
+                $exception->getCode(),
+                ['message' => $exception->getMessage()]
+            );
+        }
 
     }
 

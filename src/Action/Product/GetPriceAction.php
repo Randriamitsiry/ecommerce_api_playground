@@ -16,7 +16,11 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class GetPriceAction extends AbstractAction
 {
+    /**
+     * @var StockManager
+     */
     private $stockManager;
+
     public function __construct(StockManager $stockManager)
     {
         $this->stockManager = $stockManager;
@@ -24,6 +28,11 @@ class GetPriceAction extends AbstractAction
 
     public function __invoke(int $productId, int $numberOfItems)
     {
-        return new JsonResponse(['price' => $this->stockManager->getTotalPrice($productId, $numberOfItems)]);
+        try {
+            $price = $this->stockManager->getTotalPrice($productId, $numberOfItems);
+            return $this->renderSuccess(['price' => $price]);
+        } catch (\Exception $exception) {
+            return $this->renderError($exception->getCode(), ['message' => $exception->getMessage()]);
+        }
     }
 }

@@ -25,10 +25,14 @@ class UpdatePriceAction extends AbstractPostingAction implements ProductInterfac
 
     public function __invoke(Request $request)
     {
-        $payload = json_decode($request->getContent(), true);
-        $this->validatePayload($payload);
-        $this->productManager->setPrice($payload[self::PRODUCT_ID], floatval($payload[self::PRICE]));
-        return new JsonResponse([]);
+        try {
+            $payload = json_decode($request->getContent(), true);
+            $this->validatePayload($payload);
+            $this->productManager->setPrice($payload[self::PRODUCT_ID], floatval($payload[self::PRICE]));
+            return new JsonResponse([]);
+        } catch (\Exception $exception) {
+            return $this->renderError($exception->getCode(), ['message' => $exception->getMessage()]);
+        }
     }
 
     protected function getRequiredPayload(): array

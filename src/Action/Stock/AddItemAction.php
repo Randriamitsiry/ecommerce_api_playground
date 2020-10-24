@@ -29,11 +29,15 @@ class AddItemAction extends AbstractPostingAction implements StockInterface
     }
     public function __invoke(Request $request)
     {
-        $payload = json_decode($request->getContent(), true);
-        $this->validatePayload($payload);
-        $lot = $this->craftStockFromPayload($payload);
-        $this->lotManager->save($lot);
-        return $this->renderSuccess([]);
+        try {
+            $payload = json_decode($request->getContent(), true);
+            $this->validatePayload($payload);
+            $lot = $this->craftStockFromPayload($payload);
+            $this->lotManager->save($lot);
+            return $this->renderSuccess([]);
+        } catch (\Exception $exception) {
+            return  $this->renderError($exception->getCode(), ['message' => $exception->getMessage()]);
+        }
     }
 
     protected function getRequiredPayload(): array
